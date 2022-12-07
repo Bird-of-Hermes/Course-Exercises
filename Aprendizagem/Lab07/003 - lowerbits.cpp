@@ -8,7 +8,7 @@ int main()
 {
     int integer;
 
-    cout << "Turning off the 16 lower binary digits" << endl;
+    cout << "Showing the 16 lower binary digits" << endl;
     cout << "Input an integer: " << endl;
     cin >> integer;
     lowerbits(integer);
