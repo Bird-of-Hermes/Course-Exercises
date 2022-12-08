@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-// escreva uma funcao que resolva ax²+bx+c
+// write a funcion that solves the quadratic equation ax²+bx+c
 
 using namespace std;
 
