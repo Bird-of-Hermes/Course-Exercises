@@ -3,7 +3,7 @@
 int main()
 {   
     using namespace std;
-    int vector[247] = {10,20,30,40,50};
+    int vector[5] = {10,20,30,40,50};
 
     for(unsigned int i = 0;;i++)
     {
