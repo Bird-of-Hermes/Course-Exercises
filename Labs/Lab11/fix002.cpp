@@ -1,14 +1,12 @@
 #include <iostream>
-#include <cstring>
 
 using namespace std;
 
 int main()
 {
-    char name[60], conc[1];
+    char name[60], conc[2];
     cout << "What is your name? ";
     cin.getline(name, 60);
-    cin.ignore();
     cout << "Which concept do you deserve? ";
     cin >> conc;
     char conc2 = conc[0]+1;
