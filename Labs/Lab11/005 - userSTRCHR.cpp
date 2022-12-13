@@ -23,4 +23,5 @@ int main()
 // I don't believe this has any application IRL, so I'll just do it the simplest way for the output described
 // in the Lab11 to work. Many cases out of the test case will fail but for a real world application a
 // program would ask for name and surname in two different inputs. I can't really fathom a real world usage 
-// for this type of manipulation. It the need arises then someone before me messed up, that's lack of organization.
+// for this type of manipulation. If the need arises then someone before me messed up for lack of organization
+// in the code and that will have to be fixed; and fixing that fixes this.
