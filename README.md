@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=04cOszIPTTU&list=PLX6Nyaq0ebfgWfHqVHVAEPCDG54RLA
 
 https://github.com/JudsonSS/ProgComp
 
-Atenção 1: a sintaxe e o estilo do código estão sendo aprimorados a cada exercício à medida que coisas novas são aprendidas,
+Atenção 1: a sintaxe e o estilo do código estão sendo aprimorados a cada exercício e à medida que coisas novas são aprendidas,
 não se preocupe em torná-lo mais bonito, está acontecendo dia após dia.
 
 Atenção 2: Todos os comentários nestes arquivos fazem parte da minha experiência como programador iniciante e são para mim.
