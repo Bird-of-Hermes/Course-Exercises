@@ -1,0 +1,88 @@
+FOR "006 - datesgain1.cpp"
+
+subtracao menos(ttime, ttime); // maths -> to use, display() couts and arguments needs to be modified
+subtracao menos(ttime Ending, ttime Beginning)
+{
+    subtracao result;
+    short hours1;
+    if (hours1 < Beginning.thour) 
+                                  
+    {
+        hours1 = hours1 + 24;     
+    }
+    result.minuteshours.thour = (hours1 - Beginning.thour)*60;
+    result.minuteshours.thour = result.minuteshours.thour + (Ending.tminutes - Beginning.tminutes);
+
+    result.simphours = result.minuteshours.thour/60;
+    result.simpminutes = result.minuteshours.thour%60;
+
+    return result;
+}
+
+----------------------------------------------------------------------------------------------
+
+Below is code that I threw away after many hours and overthinking, not to be used together with 
+above; also, I doubt it'll work as intended.
+
+----------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+struct ttime
+{
+    unsigned short thour;
+    unsigned short tminutes;
+};
+//prototypes operators
+istream & operator>>(istream&, ttime&);
+ostream & operator<<(ostream&, ttime);
+ttime operator-(ttime, ttime);
+//prototype real functions
+void program();
+
+int main()
+{
+    program();
+
+    return 0;
+}
+
+ istream & operator>>(istream& is, ttime& time)
+{
+    is >> time.thour;
+    is >> time.tminutes;
+
+    return is;
+}
+
+ostream & operator<<(ostream& os, ttime time)
+{
+    os << time.thour;
+    return os;
+}
+
+ttime operator-(ttime time2, ttime time1)
+{
+    ttime result;
+    if(time2.thour < time1.thour)
+    {
+        time2.thour = time2.thour + 24;
+    }
+    result.thour = 60*(time2.thour - time1.thour) - time2.tminutes - time1.tminutes;
+    
+    return result;
+}
+
+void program()
+{
+    ttime PclassB, PclassE, PclassR;
+    cout << "Beginning: HH MM\b\b\b\b\b";
+    cin >> PclassB;
+    cout << "Ending: HH MM\b\b\b\b\b";
+    cin >> PclassE;
+    PclassR = PclassE-PclassB;
+    cout << "Between " << PclassB.thour << ":" << PclassB.tminutes << " and " 
+         << PclassE.thour << ":" << PclassB.tminutes << " there are " << PclassR 
+         << " minutes, that is " << PclassR.thour << " hours and " 
+         << PclassR.tminutes << " minutes.";
