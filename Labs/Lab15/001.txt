@@ -1,0 +1,11 @@
+float peso;
+peso = 30;
+cout << peso;
+delete peso;
+
+------------------------
+
+Answer: No, because peso is not an dynamic allocated memory + it's not a pointer; 
+if it were a pointer the code would run, but later on it could return an error, since
+the deleted memory is returned to the OS to other things, and since a program is not allowed to access
+parts of memory it doesn't have access, the OS crashes it.
