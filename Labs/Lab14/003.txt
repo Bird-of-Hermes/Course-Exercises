@@ -1,0 +1,19 @@
+The exercise is to discover what the program will output when ran on a computer, 
+but without running it first.
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int valor = 10, *temp, soma = 0;
+temp = &valor;
+*temp = 20;
+temp = &soma;
+*temp = valor;
+cout << "valor: " << valor << "\nsoma: " << soma << endl;
+}
+
+--------------------------------------------------------------
+valor: 20
+soma: 20
