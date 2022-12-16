@@ -1,1 +1,1 @@
-Receives X as a input and outputs X until X the same X is inserted twice.
+It'll ask for X until X=0
