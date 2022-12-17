@@ -1,0 +1,2 @@
+Yes, it will print true of false depending on X's comparison result;
+if X>0 then it will print "true", if X<0 then it will print "false".
