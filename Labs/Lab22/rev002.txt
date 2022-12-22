@@ -1,0 +1,3 @@
+As the professor explained in class: using char as input to an action does not trigger malfunction in the
+program since that's all the user can type(characters). Reading characters as integers on the other way
+will cause the program to "break" the "cin" and it will stop accepting new inputs, remaining in a failed loop.
