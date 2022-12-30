@@ -1,0 +1,2 @@
+Const is used to preserve the original variable.
+Since it isn't the original value that's being modified, there's no point in doing this.
