@@ -54,7 +54,7 @@ int main()
                 RInput.read((char*)&Input.UserText, sizeof(Input.UserText));
                 RInput.read((char*)&Input.TColorCode, sizeof(Input.TColorCode));
                 RInput.read((char*)&Input.BColorCode, sizeof(Input.BColorCode));
-                char Everything[110]{"\033[38;5;"};
+                char Everything[32]{"\033[38;5;"};
                 strcat(Everything, Input.TColorCode);
                 strcat(Everything, ";48;5;");
                 strcat(Everything, Input.BColorCode);
