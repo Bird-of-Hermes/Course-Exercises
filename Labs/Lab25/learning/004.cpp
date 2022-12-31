@@ -9,7 +9,7 @@ int main()
     int SizeA = sizeof(Array)/4;
     int SizeB = sizeof(Array1)/4;
     
-    int * ptr =  ArrayCat(Array, SizeA, Array1, SizeB);
+    int * ptr =  ArrayCat(Array, SizeA, Array1, SizeB); // receiving new from function
     
     cout << "Array 1: " << endl;
     for (size_t i = 0; i < SizeA; i++)
@@ -23,17 +23,17 @@ int main()
     for (size_t i = 0; i < (SizeA+SizeB); i++)
         cout << ptr[i] << " ";
 
-    delete [] ptr;
+    delete [] ptr; // deleting allocated memory
     return 0;
 }
 
 int* ArrayCat(int* Ar1, int SizeA, int* Ar2, int SizeB)
 {
-    int* ptr = new int [SizeA+SizeB];
+    int* ptr = new int [SizeA+SizeB]; // allocating memory
     for (size_t i = 0; i < SizeA; i++)
         ptr[i] = Ar1[i];
     for (size_t i = SizeB, j=0; i < SizeA+SizeB; i++, j++)
         ptr[i] = Ar2[j];
     
-    return ptr;
+    return ptr; // return as a pointer 
 }
