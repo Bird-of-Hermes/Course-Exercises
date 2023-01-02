@@ -1,0 +1,7 @@
+struct CharSet
+{
+    char * str; // pointer to dinamic array  
+    int tam; // size of array
+};
+
+?? I don't understand what this exercise wants
