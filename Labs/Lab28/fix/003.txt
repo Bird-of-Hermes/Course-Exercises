@@ -1,0 +1,4 @@
+1) References leave the code cleaner than pointers
+
+2) Pointers need an extra slot of memory the store the pointer itself
+   while references work using the same slot of memory of the argument
